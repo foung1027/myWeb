@@ -1,0 +1,296 @@
+/*全站通用設定*/
+body {
+    font-family: 'Noto Serif TC', 'Microsoft JhengHei', serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #DCDDDF;
+    color: #4b4b4b;
+}
+
+/*導覽列樣式*/
+header {
+    background-color: #53565C;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*主要內容區*/
+.intro {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color:#DCDDDF;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.about {
+  padding: 3rem 1rem;
+  background-color: #f2f4f6;
+  text-align: center;
+}
+
+.about h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4a6e78; /* 莫蘭迪風標題色 */
+}
+
+.projects {
+  padding: 3rem 1rem;
+  background-color: #f2f4f6;
+  text-align: center;
+}
+
+.project h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4a6e78; /* 莫蘭迪風標題色 */
+}
+
+.about-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  align-self: center;
+  margin-top: 0.5rem;
+  transition: box-shadow 0.3s ease,transform 0.3s ease;
+}
+
+.about-card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* 輕輕上浮 */
+}
+
+.about-signature {
+    font-style: italic;
+    color: #666;
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f2f4f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1rem;
+}
+
+.about-text p {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.highlight-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2f3e46;
+    margin-top: 2rem;
+}
+
+.highlight-title span {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0.2rem 0.5rem;
+}
+
+.highlight-title span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+  width: 100%;
+  height: 0.5em;
+  background: #ebe3be; /* 螢光筆風莫蘭迪藍綠 */
+  z-index: -1;
+  transform: rotate(-2deg);
+  border-radius: 0.2rem;
+}
+
+.section-title span {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.6rem;
+}
+
+.section-title span::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 4px;
+  background-color: #90a4ae; /* 莫蘭迪灰藍 */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.section-title-line {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #2f3e46;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title-line::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #90a4ae;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.section-contact {
+  font-size: 2rem;
+  color: #2f3e46;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid #cfd8dc;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: #f9f9f9;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color:#ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transfrom 0.3s ease,box-shadow 0.3s ease;
+}
+
+.project-card::before {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #2f3e46;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4a6e78;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #33565c;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+
+/*頁尾樣式*/
+footer {
+    background-color: #53565C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

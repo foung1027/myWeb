@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <!--建置RWD-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網站</title>
+    <!--串聯CSS樣式-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--加入Google字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!--加入Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <!--加入Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--導覽列-->
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我</a></li>
+                <li><a href="projects.html">作品集</a></li>
+                <li><a href="contact.html">聯絡我</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--網頁內容-->
+    <main>
+        <section class="project">
+            <h1 class="highlight-title"><span>作品集</span></h1>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/ToDoList.png" alt="作品1預覽圖">
+                        <h3>待辦清單小工具</h3>
+                        <p>使用 HTML、CSS、JavaScript 製作，可編輯、可排序的待辦清單。</p>
+                        <a href="https://foung1027.github.io/ToDoList/" class="btn">查看作品</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/立畯.png" alt="作品2預覽圖">
+                        <h3>立畯企業有限公司</h3>
+                        <p>客製化企業網頁開發作品</p>
+                        <a href="https://foung1027.github.io/LijunWorks/" class="btn">查看作品</a>
+                </div>
+            <!-- 可繼續新增更多卡片 -->
+            </div>
+        </section>
+    </main>
+    <!--頁尾-->    
+    <footer>
+        <p>&copy;2025 林泳鳳</p>
+    </footer>
+    <!--串聯javaScript樣式-->
+    <script src="js/main.js"></script>
+</body>
+</html>
