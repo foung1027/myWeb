@@ -6,6 +6,46 @@ html,body {
   margin: 0;
 }
 
+/*導覽列樣式*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #53565C;
+  padding: 0.5rem 1em;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/*導覽連結*/
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/*漢堡按鈕*/
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+
 /* 設定 wrapper 為 flex 版型，主內容推到底 */
 .wrapper {
   display: flex;
@@ -78,7 +118,7 @@ nav a:hover {
     padding: 3rem 2rem;
 }
 
-.intro h1 {
+.intro h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #4a6e78;
@@ -114,7 +154,7 @@ nav a:hover {
 }
 
 .intro-left p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #4a4a4a;
   margin-bottom: 2rem;
 }
@@ -356,7 +396,27 @@ nav a:hover {
   background-color: #33565c;
 }
 
+/*手機版樣式*/
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+   display: none;
+   flex-direction: column;
+   background-color: #44474d;
+   position: absolute;
+   top: 60px;
+   right: 20px;
+   padding: 1rem;
+   border-radius: 8px; 
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
   .intro{
     flex-direction: column;
     text-align: center;
