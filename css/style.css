@@ -396,6 +396,12 @@ nav a:hover {
   background-color: #33565c;
 }
 
+.contact-info {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
 /*手機版樣式*/
 @media (max-width: 768px) {
   .menu-toggle {
