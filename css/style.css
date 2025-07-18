@@ -1,4 +1,7 @@
 /*全站通用設定*/
+* {
+  box-sizing: border-box;
+}
 
 /* 讓 body 和 html 撐滿整個畫面 */
 html,body {
@@ -103,6 +106,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center; /* 內容整體置中 */
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     gap: 2rem;
@@ -416,15 +420,18 @@ nav a:hover {
     display: flex;
   }
 
+  .intro-wrapper {
+    padding: 1rem;
+    height: auto;
+  }
+
   .intro{
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1.5rem;
-  }
-
-  .intro-wrapper {
     padding: 2rem 1rem;
-    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .intro-left,
@@ -434,6 +441,10 @@ nav a:hover {
 
   .intro-left {
     text-align: center;
+  }
+
+  .intro-right img {
+    max-width: 180px;
   }
 
   .intro-btn {
