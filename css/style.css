@@ -422,7 +422,7 @@ nav a:hover {
 
   .intro-wrapper {
     padding: 2rem 1rem;
-    height: auto;
+    /*height: auto;*/
   }
 
   .intro{
