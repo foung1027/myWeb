@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!--建置RWD-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網站</title>
+    <title>聯絡我｜林泳鳳</title>
     <!--串聯CSS樣式-->
     <link rel="stylesheet" href="css/style.css">
     <!--加入Google字體-->
@@ -15,8 +15,15 @@
 <body>
     <header>
         <!--導覽列-->
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">林泳鳳</div>
+            <!--漢堡選單按鈕-->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!--導覽連結-->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about.html">關於我</a></li>
                 <li><a href="projects.html">作品集</a></li>
@@ -25,11 +32,23 @@
         </nav>
     </header>
     <!--網頁內容-->
-    <main>
-        <section class="contact">
-            <h1 class="section-contact">
-                <i class="fa-solid fa-envelope"></i>聯絡我</h1>
-            <p></p>
+    <main class="contact">
+        <section class="contact-info">
+            <h1>聯絡我📫</h1>
+            <p>歡迎透過以下方式與我聯絡 !</p>
+            <p><strong>手機 : </strong>0976-231-927</p>
+            <p><strong>Email : </strong>miko06814@gmail.com</p>
+        </section>
+
+        <section class="contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEkr74UnEfpOnN8yxdQwe8RRjGajbt3n9ZKuuek7EmkK0zHA/viewform?embedded=true" 
+                width="100%" 
+                height="700" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                載入中…
+            </iframe>
         </section>
     </main>
     <!--頁尾-->    
