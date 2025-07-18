@@ -6,6 +6,36 @@ html,body {
   margin: 0;
 }
 
+/**/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #53565C;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
 /* 設定 wrapper 為 flex 版型，主內容推到底 */
 .wrapper {
   display: flex;
